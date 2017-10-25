@@ -1,0 +1,65 @@
+* {
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+input, textarea {
+	padding: 5px;
+	border: 1px grey solid;
+}
+
+h1 {
+	font-weight: 400;
+}
+
+h2 {
+	margin-top: 15px;
+	margin-bottom: 3px;
+}
+
+p {
+	margin-bottom: 5px;
+}
+
+.bordered-button {
+	border: 2px crimson solid;
+	border-radius: 999px;
+	padding: 5px 10px;
+	font-size: 120%;
+	color: crimson;
+	width: 200px;
+	position: absolute;
+	text-align: center;
+}
+
+
+.bordered-button:hover{
+	background-color: crimson;
+	color: white;
+	transition-duration: 0.5s;
+}
+
+.borderless-button {
+	color: crimson;
+}
+
+.borderless-button:hover {
+	text-decoration: underline;
+}
+
+.disabled-bordered-button {
+	border-color:#aaa;
+	color: #aaa;
+}
+
+.disabled-bordered-button:hover {
+	background-color:#aaa;
+	color: white;
+}
+
+.functionally-disabled {
+	pointer-events: none;
+}

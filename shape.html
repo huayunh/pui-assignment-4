@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flip Stitch Pillow</title>
+	<meta charset="utf-8">
+	
+	<script
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous"></script>
+	<script src="js/item-select.js"></script>
+	<script type="text/javascript" src="js/updateCart.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+</head>
+<body onload="onLoadShape();">
+	<div class="button-holder">
+		<a class="bordered-button" href="type.html">choose a type</a>
+		<a class="bordered-button disabled-bordered-button functionally-disabled" href="detail.html">review your item</a>
+	</div>
+	<a id="cart" href="cart.html">
+		<img src="assets/cart.svg" />
+		<span id="item-sum">0</span>
+	</a>
+
+	<div class="content">
+		<h1>Choose your pillow shape.</h1>
+		<div id="divisor"></div>
+		<p>You may choose from one of our existing template, or you may simply
+		go for a design of your own choice!</p>
+	</div>
+
+	<main class="flex-holder">
+		<div class="item" id="button1" onclick="onClick(1);updateShape('square');">
+			<img class="img" src="https://i2.wp.com/freepikpsd.com/wp-content/uploads/2016/09/2-4.jpg?resize=590%2C393">
+			<div class="description">square</div>
+		</div>
+		<div class="item" id="button2" onclick="onClick(2);updateShape('round');">
+			<img class="img" src="https://onlinecommerce.scene7.com/is/image/Onlinecommerce?src=ir(OnlinecommerceRender/round-box-button-pillow-app?obj=pillow&src=32000-0018&obj=pillow/accents&src=5416-0000&show)&wid=325">
+			<div class="description">round</div>
+		</div>
+		<div class="item" id="button3" onclick="onClick(3);updateShape('dog');">
+			<img class="img" src="https://img0.etsystatic.com/159/2/7152689/il_340x270.1201268516_11yy.jpg">
+			<div class="description">dog</div>
+		</div>
+		<div class="item" id="button4" onclick="onClick(4);updateShape('bear');">
+			<img class="img" src="https://img1.etsystatic.com/131/0/5525322/il_570xN.901999741_t5if.jpg">
+			<div class="description">bear</div>
+		</div>
+		<div class="item" id="button5" onclick="onClick(5);updateShape('bunny');">
+			<img class="img" src="https://img1.etsystatic.com/000/0/5310445/il_570xN.320426685.jpg">
+			<div class="description">bunny</div>
+		</div>
+		<div class="item" id="button6" onclick="onClick(6);updateShape('cat');">
+			<img class="img" src="https://img0.etsystatic.com/010/0/6480743/il_680x540.421728642_12zn.jpg">
+			<div class="description">cat</div>
+		</div>
+		<div class="item" id="button7" onclick="onClick(7);updateShape('customize');">
+			<img class="img" src="https://image.spreadshirtmedia.com/content/f_png,w_650/v3/cms/cyo/seo/pillowcases/914_us_desktop">
+			<div class="description">customize your own!</div>
+		</div>
+	</main>
+</body>
+</html>

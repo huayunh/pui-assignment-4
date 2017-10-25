@@ -1,0 +1,44 @@
+#close {
+	position: absolute;
+	width: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+table {
+	width: 100%;
+	border-top: #999 solid 3px;
+	margin: 20px 0;
+}
+
+td {
+	padding: 10px;
+}
+tr:nth-child(even) {background: #ddd;}
+tr:nth-child(odd) {background: transparent;}
+
+table a {
+	color: crimson;
+}
+
+section {
+	position: relative;
+}
+
+section:last-child {
+	background-color: #eee;
+	padding: 30px
+}
+
+#getQuote {
+	float: right;
+	right: 0;
+	bottom: 0;
+	margin: 30px;
+	background-color: white;
+}
+
+#getQuote:hover {
+	background-color: crimson;
+	color: white;
+}

@@ -1,0 +1,169 @@
+.button-holder {
+	margin-bottom: 80px;
+	position: relative;
+}
+
+#quote {
+	position: relative;
+	cursor: pointer;
+}
+
+.button-holder a+a {
+	right: 0;
+}
+
+body {
+	padding: 30px;
+}
+
+.content {
+	margin: 5vh 10vw;
+}
+
+.flex-holder {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item {
+	width: 300px;
+	height: 300px;
+	background: #eee;
+	margin: 10px;
+	border: 2px white solid;
+}
+
+.item:hover {
+	box-shadow: 0 0 5px grey;
+	transition-duration: 0.3s;
+}
+
+.img {
+	width: 100%;
+	height: 70%;
+	background-color: white;
+}
+
+.description {
+	width: 100%;
+	text-align: center;
+	padding-top: 5%;
+	font-size: 150%;
+	opacity: 0.8;
+	font-family: serif;
+}
+
+.flex-holder > div.selected {
+	border: 2px crimson solid;
+	transition-duration: 0.4s;
+}
+
+/* the cart icon*/
+#cart {
+	position: absolute;
+	left: 48%;
+	border: none;
+	top: 0;
+	margin-top: 40px;
+	text-anchor: middle;
+}
+
+#cart img {
+	height: 30px;
+}
+
+#item-sum {
+	background-color: #888;
+	border-radius: 999px;
+	border: 3px solid white ;
+	position: relative;
+	right: 6px;
+	bottom: 25px;
+	color: white;
+	padding: 2px 5px;
+	font-size: 30%;
+}
+
+#cart.shake {
+	animation: shake 0.3s;
+	animation-iteration-count: 1; 
+}
+
+@keyframes shake {
+    0% { transform: translateX(1px) ; }
+    25% { transform: translateX(-1px) ; }
+    50% { transform: translateX(1px) ; }
+    75% { transform: translateX(-1px) ; }
+    100% { transform: translateX(1px) ; }
+}
+
+/* for detail.html */
+main {
+	margin: 5vh 10vw;
+	position: relative;
+}
+
+#left {
+	width: 30vw;
+}
+
+#item-pic {
+	background-color: #ddd;
+	width: 30vw;
+	height: 30vw;
+}
+
+#left p {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#right {
+	right: 0;
+	top: 0;
+	position: absolute;
+	width: 50%;
+}
+
+.color {
+	position: relative;
+	border-radius: 66px;
+	width: 20px;
+	height: 20px;
+	margin: 10px;
+	margin-top: 0px;
+
+}
+
+#right p {
+	margin-top: 3px;
+	margin-bottom: 7px;
+}
+
+.color:nth-child(1) {background: #ccc;}
+.color:nth-child(2) {background: #bad;}
+.color:nth-child(3) {background: #eaf;}
+.color:nth-child(4) {background: #3fd;}
+
+#divisor {
+	background-color: crimson;
+	width: 20px;
+	height: 3px;
+	margin: 20px 10px;
+}
+
+/* the circle jumps into the cart animation */
+#jumpingCircle {
+	background-color: crimson;
+	color: white;
+	border-radius: 999px;
+	padding: 2px 5px;
+	opacity: 0;
+	z-index: 99;
+	font-size: 25px;
+	position: absolute;
+}
+
+#item-title {
+	font-size: 130%;
+}

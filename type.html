@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flip Stitch Pillow</title>
+	<meta charset="utf-8">
+
+	<script
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/updateCart.js"></script>
+	<script src="js/item-select.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+</head>
+<body onload="onLoadType();">
+	<div class="button-holder">
+		<a class="bordered-button" href="index.html">home</a>
+		<a class="bordered-button disabled-bordered-button functionally-disabled" href="shape.html">choose a shape</a>
+	</div>
+	<a id="cart" href="cart.html">
+		<img src="assets/cart.svg" />
+		<span id="item-sum">0</span>
+	</a>
+	
+	<div class="content">
+		<h1>Choose your pillow type.</h1>
+		<div id="divisor"></div>
+		<p>Where would your pillow go?</p>
+	</div>
+	<main class="content flex-holder" >
+		<div class="item" id="button1" onclick="onClick(1); updateType('couch');">
+			<img class="img" src="https://d2ydh70d4b5xgv.cloudfront.net/images/3/3/grey-blue-decorative-throw-couch-pillow-case-cushion-cover-sofa-waist-throw-5d3ff686ecc39e3853c1c996f96cba2c.jpg" />
+			<div class="description">couch pillow</div>
+		</div>
+		<div class="item" id="button2" onclick="onClick(2); updateType('bed');">
+			<img class="img" src="https://target.scene7.com/is/image/Target/52291075?wid=520&hei=520&fmt=pjpeg" />
+			<div class="description">bed pillow</div>
+		</div>
+		<div class="item" id="button3" onclick="onClick(3); updateType('round');">
+			<img class="img" src="https://images-na.ssl-images-amazon.com/images/I/91PP1wG0WcL._SX355_.jpg" />
+			<div class="description">round pillow</div>
+		</div>
+		<div class="item" id="button4" onclick="onClick(4); updateType('floor pouf');">
+			<img class="img" src="http://photo.foter.com/photos/335/moroccan-pouf-leather-31.jpg" />
+			<div class="description">floor pouf pillow</div>
+		</div>
+	</main>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flip Stitch Pillow</title>
+	<meta charset="utf-8">
+
+	<script
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/updateCart.js"></script>
+	<script type="text/javascript" src="js/detail.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+</head>
+<body>
+	<div class="button-holder">
+		<a class="bordered-button" href="shape.html">choose a shape</a>
+	</div>
+	<a id="cart" href="cart.html">
+		<img src="assets/cart.svg" />
+		<span id="item-sum">0</span>
+	</a>
+
+	<div class="content">
+		<h1>Review your choice.</h1>
+		<div id="divisor"></div>
+		<p>Is this the pillow you are looking for? Please pick a quantity, so that we can give you the quote based on the quantity.</p>
+	</div>
+
+	<main>
+		<div id="left">
+			<img id="item-pic" src="https://www.zazzle.com/rlv/svc/view?rlvnet=1&realview=113829903915989082&design=6ed0aa9a-f1d7-4bf5-ab98-c993b4b85c94&style=16x16&fabric=poly&max_dim=540&cacheDefeat=1508753599255" />
+			<p id="item-title">dog-shaped bed pillow</p>
+		</div>
+		<div id="right">
+
+			<p>How many? 
+			<input id="quantity" type="number" name="quantity" value='1'/><br /></p>
+
+			<p>Anything else you would like to let us know?<br />
+			<textarea id="info" name="yourMessage" cols="70" rows="10"></textarea>
+			</p><br />
+			<a id="quote" class="bordered-button">add to my shopping cart</a><br /><br />
+			<div id="more">You may click on the shopping cart icon on the top to check-out, or <a class="borderless-button" href="type.html">shop for more pillows</a>!</div>
+		</div>
+	</main>
+</body>
+</html>
