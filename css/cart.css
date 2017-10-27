@@ -19,7 +19,12 @@ tr:nth-child(odd) {background: #ddd;}
 tr:nth-child(even) {background: transparent;}
 
 table a {
-	color: crimson;
+	color: black;
+	cursor: pointer;
+}
+
+table a img {
+	height: 25px;
 }
 
 section {

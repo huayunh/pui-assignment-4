@@ -28,7 +28,7 @@ function renderTable() {
 			+ item.shape + '</td><td>'
 			+ item.quantity + '</td><td>'
 			+ item.info + '</td><td>'
-			+ '<a href="#" onclick="deleteItem(' + (i) + ');">delete</a></td></tr>'
+			+ '<a onclick="deleteItem(' + (i) + ');"><img src="assets/trash_bin.svg" /></a></td></tr>'
 			);
 	}
 }
