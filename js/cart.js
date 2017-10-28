@@ -6,37 +6,37 @@ var myPurchase = JSON.parse(localStorage.myPurchase);
 var itemList = myPurchase.itemList;
 
 $(function (){
-	renderTable();
-	console.log(localStorage.lastVisit)
+    renderTable();
+    console.log(localStorage.lastVisit)
 });
 
 function deleteItem(n){
-	itemList.splice(n, 1);
-	myPurchase.itemList = itemList;
-	localStorage.setItem('myPurchase', JSON.stringify(myPurchase));
-	renderTable();
+    itemList.splice(n, 1);
+    myPurchase.itemList = itemList;
+    localStorage.setItem('myPurchase', JSON.stringify(myPurchase));
+    renderTable();
 }
 
 function renderTable() {
-	var table = $('#items');
-	table.empty();
-	table.append(tableHeader);
-	for (var i = 0; i < itemList.length; i++) {
-		var item = itemList[i];
-		table.append('<tr><td>' + (i+1) + '</td><td>'
-			+ item.type + '</td><td>'
-			+ item.shape + '</td><td>'
-			+ item.quantity + '</td><td>'
-			+ item.info + '</td><td>'
-			+ '<a onclick="deleteItem(' + (i) + ');"><img src="assets/trash_bin.svg" /></a></td></tr>'
-			);
-	}
+    var table = $('#items');
+    table.empty();
+    table.append(tableHeader);
+    for (var i = 0; i < itemList.length; i++) {
+        var item = itemList[i];
+        table.append('<tr><td>' + (i+1) + '</td><td>'
+            + item.type + '</td><td>'
+            + item.shape + '</td><td>'
+            + item.quantity + '</td><td>'
+            + item.info + '</td><td>'
+            + '<a onclick="deleteItem(' + (i) + ');"><img src="assets/trash_bin.svg" /></a></td></tr>'
+            );
+    }
 }
 
 function getQuote(){
-	clearItem();
+    clearItem();
 }
 
 function clearItem(){
-	localStorage.setItem('myPurchase', '{"itemList":[]}');
+    localStorage.setItem('myPurchase', '{"itemList":[]}');
 }
